@@ -10,19 +10,36 @@ public class PlayerMovement : MonoBehaviour
     float horizontalmove = 0f;
     public float runSpeed = 40f;
     bool jump = false;
+    float flyingSpeed;
+    bool fly = false;
 
     void Update() {
         
         horizontalmove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         if(Input.GetButtonDown("Jump")) {
-            jump = true;
+            jump = true; 
         }
+        else
+        {
+            if (Input.GetButton("Jump"))
+            {
+                fly = true;
+                Debug.Log("Is Flying");
+            }
+            else
+            {
+                fly = false;
+                Debug.Log("Is Stop Flying");
+            }
+           
+        }
+        
     }
 
     void FixedUpdate() {
         
-        controller.Move(horizontalmove * Time.fixedDeltaTime, false, jump);
+        controller.Move(horizontalmove * Time.fixedDeltaTime, false, jump,fly);
         jump = false;
         
     }

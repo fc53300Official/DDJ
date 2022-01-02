@@ -30,6 +30,13 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+
+	//FLYING
+	float movex;
+    float movey;
+	float speed;
+	
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -61,7 +68,7 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool crouch, bool jump)
+	public void Move(float move, bool crouch, bool jump,bool fly)
 	{
 		// If crouching, check to see if the character can stand up
 		if (!crouch)
@@ -129,7 +136,22 @@ public class CharacterController2D : MonoBehaviour
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			//Debug.Log("Is agr Flying");
 		}
+		
+		if (fly)
+        {
+			movex = Input.GetAxis("Horizontal");
+			movey = Input.GetAxis("Vertical");
+			speed = 20;
+			//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			//flyingMove = new Vector2(movex * speed, movey * speed);
+			m_Rigidbody2D.AddForce(new Vector2(movex * speed, movey * speed));
+			//Debug.Log("Is Flying");
+		}
+										
+
+
 	}
 
 
@@ -139,8 +161,6 @@ public class CharacterController2D : MonoBehaviour
 		m_FacingRight = !m_FacingRight;
 
 		// Multiply the player's x local scale by -1.
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
+		transform.Rotate(0f, 180f, 0f);
 	}
 }
