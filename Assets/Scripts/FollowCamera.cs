@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-
     public Transform target;
     public Vector3 offset;
+    public bool PlayerDeath;
 
     void FixedUpdate()
     {
-        transform.position = target.position + offset;
+        if (PlayerDeath == true)
+        {
+            transform.position = target.position + offset;
+        }
+       
+        if (PlayerDeath == false)
+        {
+            transform.position = target.position + offset;
+        }
     }
+    
 }

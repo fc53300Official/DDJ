@@ -49,4 +49,5 @@ public class Player : MonoBehaviour
         move = new Vector2(movex * speed, movey * speed);
         rb.AddForce(move);
     }
+
 }

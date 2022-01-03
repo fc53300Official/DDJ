@@ -943,7 +943,7 @@ GameObject:
   - component: {fileID: 20722428}
   m_Layer: 0
   m_Name: saw_stage1 (11)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1881,7 +1881,7 @@ GameObject:
   - component: {fileID: 38094289}
   m_Layer: 0
   m_Name: laser_spikes_ON (12)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2939,7 +2939,7 @@ GameObject:
   - component: {fileID: 70969759}
   m_Layer: 0
   m_Name: laser_spikes_ON (18)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3957,7 +3957,7 @@ GameObject:
   - component: {fileID: 98210546}
   m_Layer: 0
   m_Name: acid_block (25)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4431,7 +4431,7 @@ GameObject:
   - component: {fileID: 111867738}
   m_Layer: 0
   m_Name: laser_spikes_ON (4)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5287,7 +5287,7 @@ GameObject:
   - component: {fileID: 139606225}
   m_Layer: 0
   m_Name: laser_spikes_ON (7)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5956,7 +5956,7 @@ GameObject:
   - component: {fileID: 151880710}
   m_Layer: 0
   m_Name: laser_spikes_ON (1)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7936,7 +7936,7 @@ GameObject:
   - component: {fileID: 211318677}
   m_Layer: 0
   m_Name: acid_block (18)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8215,7 +8215,7 @@ GameObject:
   - component: {fileID: 218786277}
   m_Layer: 0
   m_Name: acid_block (10)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9155,7 +9155,7 @@ Transform:
   - {fileID: 1459772200}
   - {fileID: 574192752}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &245077446
 GameObject:
@@ -11314,7 +11314,7 @@ GameObject:
   - component: {fileID: 314371424}
   m_Layer: 0
   m_Name: saw_stage1 (15)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11486,6 +11486,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &316232279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 316232280}
+  m_Layer: 0
+  m_Name: RespawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &316232280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316232279}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.92, y: -3.43, z: 0}
+  m_LocalScale: {x: 0.7549, y: 0.7596, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320142278
 GameObject:
   m_ObjectHideFlags: 0
@@ -12864,7 +12895,7 @@ GameObject:
   - component: {fileID: 346361833}
   m_Layer: 0
   m_Name: acid_block (14)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13145,7 +13176,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: e5cef4f7317dc364183f62d43c7eface, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15455,7 +15486,7 @@ GameObject:
   - component: {fileID: 415183037}
   m_Layer: 0
   m_Name: acid_block (1)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15650,7 +15681,7 @@ GameObject:
   - component: {fileID: 423938693}
   m_Layer: 0
   m_Name: acid_block (8)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17116,7 +17147,7 @@ GameObject:
   - component: {fileID: 477163455}
   m_Layer: 0
   m_Name: acid_block (12)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18038,7 +18069,7 @@ GameObject:
   - component: {fileID: 499004791}
   m_Layer: 0
   m_Name: acid_block (5)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18233,7 +18264,7 @@ GameObject:
   - component: {fileID: 499298180}
   m_Layer: 0
   m_Name: laser_spikes_ON (20)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19376,6 +19407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 655834005}
   offset: {x: 0, y: 0, z: -10}
+  PlayerDeath: 0
 --- !u!1 &530539325
 GameObject:
   m_ObjectHideFlags: 0
@@ -21554,7 +21586,7 @@ GameObject:
   - component: {fileID: 571602069}
   m_Layer: 0
   m_Name: saw_stage1 (7)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21655,7 +21687,7 @@ GameObject:
   - component: {fileID: 573177313}
   m_Layer: 0
   m_Name: laser_spikes_ON (3)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22289,7 +22321,7 @@ GameObject:
   - component: {fileID: 581996115}
   m_Layer: 0
   m_Name: saw_stage1 (1)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22390,7 +22422,7 @@ GameObject:
   - component: {fileID: 583653267}
   m_Layer: 0
   m_Name: laser_spikes_ON (13)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25237,8 +25269,9 @@ GameObject:
   - component: {fileID: 655834007}
   - component: {fileID: 655834006}
   - component: {fileID: 655834008}
+  - component: {fileID: 655834009}
   m_Layer: 0
-  m_Name: test sprite
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25351,7 +25384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655834000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.28, y: -1.7, z: 0}
+  m_LocalPosition: {x: -11.92, y: -3.43, z: 0}
   m_LocalScale: {x: 0.7549, y: 0.7596, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25359,7 +25392,7 @@ Transform:
   - {fileID: 1780665539}
   - {fileID: 780776226}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &655834006
 MonoBehaviour:
@@ -25417,6 +25450,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 780776226}
   bulletPrefab: {fileID: 4539693648796223730, guid: cee3ead83918e9e4f91e5dc5c1967177, type: 3}
+--- !u!114 &655834009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655834000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401e31c926464ab408a3e500ef705e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &658255589
 GameObject:
   m_ObjectHideFlags: 0
@@ -25904,7 +25949,7 @@ GameObject:
   - component: {fileID: 671124331}
   m_Layer: 0
   m_Name: acid_block (6)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28160,7 +28205,7 @@ GameObject:
   - component: {fileID: 737394990}
   m_Layer: 0
   m_Name: acid_block (9)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29724,7 +29769,7 @@ GameObject:
   - component: {fileID: 795431284}
   m_Layer: 0
   m_Name: saw_stage1
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31331,7 +31376,7 @@ GameObject:
   - component: {fileID: 837583376}
   m_Layer: 0
   m_Name: acid_block (11)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31442,7 +31487,7 @@ GameObject:
   - component: {fileID: 839897560}
   m_Layer: 0
   m_Name: acid_block (22)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31943,7 +31988,7 @@ GameObject:
   - component: {fileID: 851384055}
   m_Layer: 0
   m_Name: laser_spikes_ON
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32028,7 +32073,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.008633107, y: 0.06733973}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -32039,7 +32084,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.3}
+  m_Size: {x: 0.53294724, y: 0.16532055}
   m_EdgeRadius: 0
 --- !u!1 &855784182
 GameObject:
@@ -32054,7 +32099,7 @@ GameObject:
   - component: {fileID: 855784184}
   m_Layer: 0
   m_Name: saw_stage1 (3)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33103,7 +33148,7 @@ GameObject:
   - component: {fileID: 895269741}
   m_Layer: 0
   m_Name: saw_stage1 (14)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35322,7 +35367,7 @@ GameObject:
   - component: {fileID: 932059844}
   m_Layer: 0
   m_Name: acid_block (16)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36102,7 +36147,7 @@ GameObject:
   - component: {fileID: 969317112}
   m_Layer: 0
   m_Name: saw_stage1 (4)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36647,7 +36692,7 @@ GameObject:
   - component: {fileID: 993196499}
   m_Layer: 0
   m_Name: acid_block (23)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37037,7 +37082,7 @@ GameObject:
   - component: {fileID: 1003241386}
   m_Layer: 0
   m_Name: saw_stage1 (9)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38705,7 +38750,7 @@ GameObject:
   - component: {fileID: 1058996992}
   m_Layer: 0
   m_Name: saw_stage1 (8)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39761,7 +39806,7 @@ GameObject:
   - component: {fileID: 1079349040}
   m_Layer: 0
   m_Name: acid_block (19)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39983,7 +40028,7 @@ GameObject:
   - component: {fileID: 1082111336}
   m_Layer: 0
   m_Name: acid_block (2)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41007,7 +41052,7 @@ Transform:
   - {fileID: 752447107}
   - {fileID: 1466686443}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1115885182
 GameObject:
@@ -42910,7 +42955,7 @@ GameObject:
   - component: {fileID: 1164126824}
   m_Layer: 0
   m_Name: laser_spikes_ON (2)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43744,7 +43789,7 @@ GameObject:
   - component: {fileID: 1186878922}
   m_Layer: 0
   m_Name: laser_spikes_ON (8)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46280,7 +46325,7 @@ GameObject:
   - component: {fileID: 1241209668}
   m_Layer: 0
   m_Name: saw_stage1 (11)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48646,7 +48691,7 @@ GameObject:
   - component: {fileID: 1308640348}
   m_Layer: 0
   m_Name: saw_stage1 (2)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48942,7 +48987,7 @@ GameObject:
   - component: {fileID: 1330303800}
   m_Layer: 0
   m_Name: laser_spikes_ON (19)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49470,7 +49515,7 @@ GameObject:
   - component: {fileID: 1352734152}
   m_Layer: 0
   m_Name: acid_block (3)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50922,7 +50967,7 @@ GameObject:
   - component: {fileID: 1396560152}
   m_Layer: 0
   m_Name: laser_spikes_ON (5)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54583,7 +54628,7 @@ GameObject:
   - component: {fileID: 1534047770}
   m_Layer: 0
   m_Name: acid_block (13)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54805,7 +54850,7 @@ GameObject:
   - component: {fileID: 1540280292}
   m_Layer: 0
   m_Name: acid_block (15)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54916,7 +54961,7 @@ GameObject:
   - component: {fileID: 1540677696}
   m_Layer: 0
   m_Name: acid_block (7)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55585,7 +55630,7 @@ GameObject:
   - component: {fileID: 1550797100}
   m_Layer: 0
   m_Name: laser_spikes_ON (17)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56546,7 +56591,7 @@ GameObject:
   - component: {fileID: 1580738049}
   m_Layer: 0
   m_Name: saw_stage1 (6)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57893,7 +57938,7 @@ GameObject:
   - component: {fileID: 1632488077}
   m_Layer: 0
   m_Name: acid_block (24)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59190,7 +59235,7 @@ GameObject:
   - component: {fileID: 1670613111}
   m_Layer: 0
   m_Name: acid_block (21)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59717,7 +59762,7 @@ GameObject:
   - component: {fileID: 1689373556}
   m_Layer: 0
   m_Name: laser_spikes_ON (9)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60634,7 +60679,7 @@ GameObject:
   - component: {fileID: 1707799944}
   m_Layer: 0
   m_Name: laser_spikes_ON (10)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62893,7 +62938,7 @@ GameObject:
   - component: {fileID: 1775899021}
   m_Layer: 0
   m_Name: saw_stage1 (12)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64867,7 +64912,7 @@ GameObject:
   - component: {fileID: 1820663584}
   m_Layer: 0
   m_Name: acid_block (20)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65701,7 +65746,7 @@ GameObject:
   - component: {fileID: 1840770475}
   m_Layer: 0
   m_Name: saw_stage1 (13)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66081,7 +66126,7 @@ GameObject:
   - component: {fileID: 1847036578}
   m_Layer: 0
   m_Name: laser_spikes_ON (6)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66276,7 +66321,7 @@ GameObject:
   - component: {fileID: 1849279151}
   m_Layer: 0
   m_Name: saw_stage1 (10)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69220,7 +69265,7 @@ GameObject:
   - component: {fileID: 1918400880}
   m_Layer: 0
   m_Name: saw_stage1 (16)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69738,7 +69783,7 @@ GameObject:
   - component: {fileID: 1926215316}
   m_Layer: 0
   m_Name: saw_stage1 (5)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70061,7 +70106,7 @@ GameObject:
   - component: {fileID: 1933022807}
   m_Layer: 0
   m_Name: acid_block (17)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70783,7 +70828,7 @@ GameObject:
   - component: {fileID: 1968379823}
   m_Layer: 0
   m_Name: acid_block (4)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73315,8 +73360,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2037389931}
   m_Layer: 0
-  m_Name: Damage assets
-  m_TagString: Untagged
+  m_Name: Traps
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74435,7 +74480,7 @@ GameObject:
   - component: {fileID: 2076285447}
   m_Layer: 0
   m_Name: laser_spikes_ON (16)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74533,6 +74578,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2090298848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2090298850}
+  - component: {fileID: 2090298849}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2090298849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090298848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2eec9d1e521ead4f8e15779a4de00fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 316232280}
+  playerPrefab: {fileID: 6893438782638591769, guid: 4d0ebdc038a97f94aab36a44fe4b9433, type: 3}
+--- !u!4 &2090298850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090298848}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2090629842
 GameObject:
   m_ObjectHideFlags: 0
