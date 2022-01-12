@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    public Animator animator;
     public CharacterController2D controller;
 
     float horizontalmove = 0f;
@@ -16,19 +16,22 @@ public class PlayerMovement : MonoBehaviour
     void Update() {
         
         horizontalmove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
+        animator.SetFloat("Speed", Mathf.Abs(horizontalmove));
         if(Input.GetButtonDown("Jump")) {
-            jump = true; 
+            jump = true;
+            animator.SetBool("IsJumping", true);
         }
         else
         {
             if (Input.GetButton("Jump"))
             {
+                //animator.SetBool("IsJumping", true);
                 fly = true;
                 Debug.Log("Is Flying");
             }
             else
             {
+                
                 fly = false;
                 Debug.Log("Is Stop Flying");
             }
@@ -36,6 +39,12 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
+
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
+    }
+
 
     void FixedUpdate() {
         
