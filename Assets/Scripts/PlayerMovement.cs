@@ -25,15 +25,15 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetButton("Jump"))
             {
-                //animator.SetBool("IsJumping", true);
+                animator.SetBool("IsJumping", true);
                 fly = true;
-                Debug.Log("Is Flying");
+                //Debug.Log("Is Flying");
             }
             else
             {
                 
                 fly = false;
-                Debug.Log("Is Stop Flying");
+                //Debug.Log("Is Stop Flying");
             }
            
         }
@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnLanding()
     {
+        Debug.Log("Jump a fasle");
         animator.SetBool("IsJumping", false);
     }
 
