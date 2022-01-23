@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,8 +17,23 @@ public class PlayerMovement : MonoBehaviour
     float flyingSpeed;
     bool fly = false;
 
+    [SerializeField] TMP_Text countdownText;
+    float timer = 5;
+
     void Update() {
+        //Handle time
+        timer -= Time.deltaTime;
+        Debug.Log(timer.ToString());
+        //Debug.Log("NOT ACTION!");
+        countdownText.text = timer.ToString();
+        if (timer < 0)
+        {
+            controller.jumpTimer();
+            timer = 5;
+        }
         
+
+
         horizontalmove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalmove));
         if(Input.GetButtonDown("Jump")) {
@@ -42,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnLanding()
     {
-        Debug.Log("Jump a fasle");
+        //Debug.Log("Jump a fasle");
         animator.SetBool("IsJumping", false);
     }
 

@@ -163,4 +163,10 @@ public class CharacterController2D : MonoBehaviour
 		// Multiply the player's x local scale by -1.
 		transform.Rotate(0f, 180f, 0f);
 	}
+
+	public void jumpTimer()
+    {
+		//Debug.Log("JUMP!!");
+		m_Rigidbody2D.AddForce(new Vector2(0f, 800f));
+	}
 }
