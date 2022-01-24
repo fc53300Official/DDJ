@@ -23,9 +23,10 @@ public class PlayerMovement : MonoBehaviour
     void Update() {
         //Handle time
         timer -= Time.deltaTime;
-        Debug.Log(timer.ToString());
+        int intTimer = (int)timer +1;
+        //Debug.Log(timer.ToString());
         //Debug.Log("NOT ACTION!");
-        countdownText.text = timer.ToString();
+        countdownText.text = intTimer.ToString();
         if (timer < 0)
         {
             controller.jumpTimer();
@@ -46,13 +47,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 animator.SetBool("IsJumping", true);
                 fly = true;
-                //Debug.Log("Is Flying");
+                Debug.Log("Is Flying");
             }
             else
             {
                 
                 fly = false;
-                //Debug.Log("Is Stop Flying");
+                Debug.Log("Is Stop Flying");
             }
            
         }

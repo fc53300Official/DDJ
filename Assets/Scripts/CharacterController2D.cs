@@ -1,8 +1,13 @@
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
+using System;
+using UnityEngine.UI;
 
 public class CharacterController2D : MonoBehaviour
 {
+	public TimerRotate timerController;
+
 	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
 	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
@@ -18,6 +23,9 @@ public class CharacterController2D : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
+
+	[SerializeField] TMP_Text countdownText;
+	Transform child;
 
 	[Header("Events")]
 	[Space]
@@ -35,7 +43,14 @@ public class CharacterController2D : MonoBehaviour
 	float movex;
     float movey;
 	float speed;
-	
+	[SerializeField] private float fuel = 100f;
+	private float currentFuel;
+	[SerializeField] private Slider fuelSlider;
+	[SerializeField] private float fuelBurnRate = 20f;
+	[SerializeField] private float fuelRefillRate = 20f;
+	[SerializeField] private float refillCooldown = 2f;
+	private bool haveFuel = true;
+	private float timer = 0;
 
 	private void Awake()
 	{
@@ -46,7 +61,28 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+
+		currentFuel = fuel;
 	}
+
+	void Update()
+    {
+		fuelSlider.value = currentFuel / fuel;
+		if(currentFuel < 0)
+        {
+			haveFuel = false;
+			currentFuel = 0;
+        }
+        if (!haveFuel)
+        {
+			timer += Time.deltaTime;
+			if(timer >= refillCooldown)
+            {
+				haveFuel = true;
+				timer = 0;
+            }
+        }
+    }
 
 	private void FixedUpdate()
 	{
@@ -139,7 +175,7 @@ public class CharacterController2D : MonoBehaviour
 			//Debug.Log("Is agr Flying");
 		}
 		
-		if (fly)
+		if (fly && haveFuel)
         {
 			movex = Input.GetAxis("Horizontal");
 			movey = Input.GetAxis("Vertical");
@@ -147,13 +183,26 @@ public class CharacterController2D : MonoBehaviour
 			//m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 			//flyingMove = new Vector2(movex * speed, movey * speed);
 			m_Rigidbody2D.AddForce(new Vector2(movex * speed, movey * speed));
-			//Debug.Log("Is Flying");
-		}
+			currentFuel -= fuelBurnRate * Time.deltaTime;
+            //Debug.Log("Is Flying");
+        }
+        
+		if(haveFuel)
+        {
+			RefillFuel();
+        }
 										
 
 
 	}
 
+	private void RefillFuel()
+    {
+        if (currentFuel < fuel)
+        {
+			currentFuel += fuelRefillRate * Time.deltaTime;
+        }
+    }
 
 	private void Flip()
 	{
@@ -162,6 +211,7 @@ public class CharacterController2D : MonoBehaviour
 
 		// Multiply the player's x local scale by -1.
 		transform.Rotate(0f, 180f, 0f);
+		timerController.flip();
 	}
 
 	public void jumpTimer()
