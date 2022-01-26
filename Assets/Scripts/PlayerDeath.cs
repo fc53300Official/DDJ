@@ -5,8 +5,12 @@ using UnityEngine;
 public class PlayerDeath : MonoBehaviour{
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Trap")) {
-            Destroy(gameObject);
-            LevelManager.instance.Respawn();
+            GameManager.ChangeScene(GameManager.gameOverScene);
+        }
+
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            GameManager.ChangeScene(GameManager.victoryScene);
         }
     }
 }
