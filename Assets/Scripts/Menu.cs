@@ -6,11 +6,16 @@ public class Menu : MonoBehaviour
 {
     public void Restart()
     {
-        GameManager.ChangeScene(GameManager.levelScene);
+        GameManager.ChangeScene(GameManager.currentLevel);
     }
 
     public void GoToMenu()
     {
         GameManager.ChangeScene(GameManager.startScene);
+    }
+
+    public void StartGame()
+    {
+        GameManager.ChangeScene(GameManager.firstLevelScene);
     }
 }

@@ -47,13 +47,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 animator.SetBool("IsJumping", true);
                 fly = true;
-                Debug.Log("Is Flying");
+                //Debug.Log("Is Flying");
             }
             else
             {
                 
                 fly = false;
-                Debug.Log("Is Stop Flying");
+                //Debug.Log("Is Stop Flying");
             }
            
         }
